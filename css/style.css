@@ -473,6 +473,10 @@ display: inline-block;
 .card__face--back {
   background-color: var(--light);
   transform: rotateY(180deg);
+  display: flex;
+align-items: center;
+justify-content: center;
+text-shadow: 0 0 6px rgba(0, 0, 0, 1), 0 0 9px rgba(0, 0, 0, 1);
 }
 
 .card__content {
@@ -523,6 +527,24 @@ display: inline-block;
   font-size: 18px;
   line-height: 1.4;
 }
+
+
+.cardL span{
+  position: relative;
+  font-size: 21px;
+  text-align: center;
+  padding: 5px 5px;
+}
+.cardM span{
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 10px;
+}
+.cardS span{
+  text-align: center;
+  margin: 5px 5px;
+}
+
 
 /* SLIDEBOX*/
 /* Slideshow container */
@@ -679,8 +701,12 @@ input{
 }
 
 
+
 @media only screen and (max-width: 767px) {
   body{
+  }
+  .card__face--back span{
+    font-size: 12px;
   }
 
 .company{
@@ -714,9 +740,9 @@ input{
       max-width: 420px;
   }
   .hob{
-    width: 30vw;
+    width: 40vw;
     max-width:195px;
-    height: 30vw;
+    height: 40vw;
     max-height: 195px;
     margin-left: auto;
     margin-right: auto;
