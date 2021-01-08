@@ -216,6 +216,7 @@ hr{
 .rowProf{
   text-align: center;
   display: block;
+  padding-bottom: 5px;
 }
 .rowDown{
 margin: auto;
@@ -239,22 +240,23 @@ justify-content: center;
   padding: 10px;
 }
  #rowImg{
-  margin:0;
+  margin:auto;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 
 }
 #avatar{
-  opacity: 70%;
+  border-radius: 60%;
   height: auto;
   width: 50%;
   display:block;
+  filter: grayscale(85%);
+  transition: filter .3s ease;
 }
 
 #avatar:hover{
-  transition: opacity .5s ease;
-  opacity: 100%;
+filter: none;
 }
 
 #rowDetails{
@@ -805,10 +807,10 @@ padding: 16px 0;
 
 }
 .exa{
-  max-width: 250px;
+  height: 100%;
 }
 .mySlides{
-  height: auto;
+  height: 180px;
 }
 
 }
